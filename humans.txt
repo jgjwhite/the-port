@@ -1,0 +1,35 @@
+# humanstxt.org/
+# The humans responsible & technology colophon
+
+/* TEAM */
+
+    	Chef:Saverio Nardi
+	Contact: 
+	Twitter:
+	From:Toronto, Ontario
+
+	Web Design:Justin White
+	Contact:justin.gj.white@gmail.com
+	Twitter:@jgjwhite
+	From:Toronto, Ontario
+
+	Branding:
+	
+	Business:Jared Nardi
+	Contact:theport_lc@gmail.com
+	From:Little Current, Ontario
+
+	Business:Steph Flannigan
+	Contact:theport_lc@gmail.com
+	From:Little Current, Ontario
+
+/* THANKS */
+
+    <name>
+
+/* SITE */
+
+	Created:2016/07/19
+	Last Update:2016/07/19
+	Doctype:HTML5, CSS3, jQuery, Modernizr
+	IDE:Atom.io
