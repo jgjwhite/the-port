@@ -1,4 +1,6 @@
 <!doctype html>
+<!-- TODO enable mini-map, add beautify editor -->
+
 <html class="no-js" lang="">
     <head>
 
@@ -28,7 +30,23 @@
 
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
+
+
+
+
+
+
     <body>
+      <!--Facebook Js SDK Plugin-->
+          <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+
 
     <div id="page">
 
@@ -190,6 +208,11 @@
           </div>
         </div> <!-- close menu-board div-->
       </div>
+
+
+
+
+
 <!-- Hours and Location -->
   <div id="hours">
     <h1>Hours &amp; Location</h1>
@@ -266,15 +289,26 @@
       </div>
 
 
-    </div>
+      </div><!-- end div info-card-->
+    </div><!--end div hours-->
   </div>
 
+<!-- News & Specials-->
+<div id="news">
+  <h1>News &amp; Specials</h1>
+    <div class="fb-card">
 
-      </div>
+      <!-- TODO fb pluging: this is a mess!-->
+      <iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FtheportLC%2F&tabs=timeline&width=260&height=480&small_header=true&adapt_container_width=true&hide_cover=false&show_facepile=true&appId" width="260" height="480" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true"></iframe>
 
 
-  <!-- end div of page -->
   </div>
+</div>
+
+
+
+<!--end page div-->
+</div>
 
 
 

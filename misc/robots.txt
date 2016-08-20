@@ -1,0 +1,7 @@
+# www.robotstxt.org/
+# Allow crawling of all content
+# Do not delete.
+
+User-agent: *
+Disallow: /cgi-bin/
+Disallow: /img/
