@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 20.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="working" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 170.3 144" style="enable-background:new 0 0 170.3 144;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:#513527;stroke-width:3.7567;stroke-miterlimit:10;}
+	.st1{fill:none;stroke:#513527;stroke-width:1.8784;stroke-miterlimit:10;}
+	.st2{fill:none;stroke:#513527;stroke-width:0.9392;stroke-miterlimit:10;}
+	.st3{fill:none;stroke:#513527;stroke-width:3.7567;stroke-linecap:round;stroke-miterlimit:10;}
+	.st4{fill:#513527;}
+	.st5{fill:none;stroke:#513527;stroke-width:2.7233;stroke-miterlimit:10;}
+	.st6{fill:none;stroke:#513527;stroke-width:2.7233;stroke-linecap:round;stroke-miterlimit:10;}
+	.st7{fill:#513527;stroke:#513527;stroke-width:3.2972;stroke-miterlimit:10;}
+	.st8{fill:none;stroke:#513527;stroke-width:4;stroke-linecap:round;stroke-miterlimit:10;}
+	.st9{fill:#FFFFFF;stroke:#513527;stroke-width:3.7567;stroke-linecap:round;stroke-miterlimit:10;}
+	.st10{fill:none;stroke:#513527;stroke-width:4;stroke-miterlimit:10;}
+</style>
+<g id="falafel_revised">
+	<path class="st10" d="M111.4,79.5c0,16.7-13.6,30.3-30.3,30.3S50.9,96.3,50.8,79.5c0-16.7,13.6-30.3,30.3-30.3
+		c9.6,0,18.6,4.5,24.3,12.2c1.3,1.8,2.4,3.6,3.3,5.6C110.5,71,111.4,75.2,111.4,79.5z"/>
+	<path class="st10" d="M143.3,52c-0.9-2-2-3.9-3.3-5.7c-10-13.4-29-16.2-42.4-6.2c-3.6,2.7-6.5,6.1-8.6,10.1
+		c6.6,1.8,12.4,5.7,16.4,11.2c1.3,1.8,2.4,3.6,3.3,5.6c3.8,8.5,3.5,18.4-0.9,26.7C124,98,140.6,88.4,145,72.3
+		C146.8,65.5,146.2,58.4,143.3,52L143.3,52z"/>
+	<path class="st10" d="M50.8,79.5c0-16.6,13.3-30.1,29.9-30.3c-0.5-0.9-1.1-1.8-1.8-2.7c-10-13.4-29-16.2-42.4-6.2
+		s-16.2,29-6.2,42.4c5.7,7.7,14.7,12.2,24.3,12.2h0.5C52.3,90.3,50.8,85,50.8,79.5z"/>
+	<g id="texture">
+		<circle class="st10" cx="98.8" cy="78" r="3.8"/>
+		<circle class="st10" cx="90.8" cy="62.9" r="3.8"/>
+		<path class="st10" d="M108.8,67.1c-1,1.9-3.3,2.5-5.2,1.5c-1.9-1-2.5-3.3-1.5-5.2c0.7-1.2,1.9-2,3.3-2"/>
+	</g>
+</g>
+</svg>
