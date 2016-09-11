@@ -1,169 +1,184 @@
-<!doctype html>
+﻿<!doctype html>
 <!-- TODO enable mini-map, add beautify editor -->
 
 <html class="no-js" lang="">
-    <head>
+<head>
 
-        <!-- Web fonts -->
-        <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
-        <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'> <!-- Replace with Avenir -->
-        <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
+    <!-- Web fonts -->
+    <link href='https://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Nunito:400,700,300' rel='stylesheet' type='text/css'> <!-- Replace with Avenir -->
+    <link href='https://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
 
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>The Port</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>The Port</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
 
-        <!-- CSS Sheets -->
-        <link rel="stylesheet" href="css/normalize.min.css">
-        <link rel="stylesheet" href="css/main.css">
+    <!-- CSS Sheets -->
+    <link rel="stylesheet" href="css/normalize.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
 
-        <!-- Twitter Card Data -->
-        <!-- TODO: Populate these categories with the Port Site Info, Img -->
-        <meta name="twitter:card" content="summary" />
-        <meta name="twitter:site" content="@theport_lc" />
-        <meta name="twitter:title" content="The Port Restaurant, Little Current" />
-        <meta name="twitter:description" content="Come for the fish, stay for the smoothies!" />
-        <meta name="twitter:image" content="#" />
+    <!-- Twitter Card Data -->
+    <!-- TODO: Populate these categories with the Port Site Info, Img -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@theport_lc" />
+    <meta name="twitter:title" content="The Port Restaurant, Little Current" />
+    <meta name="twitter:description" content="Come for the fish, stay for the smoothies!" />
+    <meta name="twitter:image" content="#" />
 
-        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
-    </head>
+    <script src="js/vendor/modernizr-2.8.3.min.js"></script>
 
-
-
+</head>
 
 
 
-    <body>
 
-      <!--Facebook Js SDK Plugin-->
-          <div id="fb-root"></div>
-          <script>(function(d, s, id) {
-            var js, fjs = d.getElementsByTagName(s)[0];
-            if (d.getElementById(id)) return;
-            js = d.createElement(s); js.id = id;
-            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
-            fjs.parentNode.insertBefore(js, fjs);
-          }(document, 'script', 'facebook-jssdk'));</script>
+
+<body class="container-fluid">
+    <!--Facebook Js SDK Plugin-->
+    <div id="fb-root"></div>
+    <script>
+(function (d, s, id) {
+    var js, fjs = d.getElementsByTagName(s)[0];
+    if (d.getElementById(id)) return;
+    js = d.createElement(s); js.id = id;
+    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+    fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
 
 
         <div id="page"><!-- entire page containing div; may not be necessary -->
 
-    <!-- Banner section; why include nav in this section?? -->
-          <div class="banner">
+        <!-- Banner section -->
+        <div class="nav">
+            <ul class="nav nav-tabs">
+                <li><a href="#menu">Menu</a></li>
+                <li><a href="#hours">Hours &amp; Location</a></li>
+                <li><a href="#news">News &amp; Specials</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
 
-            <nav>
-              <li><a href="#">Menu</a></li>
-              <li><a href="#">Hours &amp; Location</a></li>
-              <li><a href="#">News &amp; Specials</a></li>
-              <li><a href="#">About Us</a></li>
-              <li><a href="#">Contact</a></li>
-            </nav>
-
-              <!-- TODO
-                  1/ Weather app icon
-                  2/ Open/Closed Icon
-
-              -->
-
-            <img src="img/the-port-logo-03.png" alt="the Port Logo" class="logo"/>
-          </div>
-
-
-    <!-- Menu Section -->
-      <div class="menu">
-        <h1>Menu Options</h1>
-        <div class="menu-board">
-
-        <!-- Fish & Chips -->
-          <div id="menu-card" class="fish-chips">
-              <h2>Fish &amp; Chips</h2>
-              <!-- Icon: Fish & Chips -->
-              <svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-                  <title>fish</title>
-                  <g id="Fish"><path d="M102.37,53.16a4.66,4.66,0,1,0,4.69,4.63A4.67,4.67,0,0,0,102.37,53.16Zm0,5.78a1.12,1.12,0,1,1,1.12-1.13A1.12,1.12,0,0,1,102.4,58.94Z" style="fill:#fff"/><path
-                      d="M120,60.91A4.59,4.59,0,0,0,116,54c-3.14-4.38-11.54-8.75-19.17-9.82l-.16,0H96.6c-1.79-.3-3.67-.5-5.59-.62a16.85,16.85,0,0,0-9.4-6.08c-3.1-.75-10,0-15.41,1.11C58.43,40.07,54,42,52.91,44.13a2.89,2.89,0,0,0,1,3.64l1,.76c.72.56,1.42,1.1,1.91,1.57A120.43,120.43,0,0,0,33.75,64a35,35,0,0,0-20.43-7.39h0c-2.72,0-4.4.54-5.29,1.65a2.77,2.77,0,0,0-.55,2.35c.53,2.43,3.45,6.86,7.62,9.09-4,3.22-4.79,7.93-4.86,10.82A2.83,2.83,0,0,0,11,82.69a3,3,0,0,0,2.25.84,10.06,10.06,0,0,0,2.25-.37l.38-.09c9.1-2.13,15.92-6.86,19-10.85C39.3,74.14,53.74,80,68.15,81.61a8.64,8.64,0,0,0-1.39.57,3.28,3.28,0,0,0-1.91,3.59c.49,3,4.12,5.16,8.43,5.13a11.79,11.79,0,0,0,4.26-.8,16.89,16.89,0,0,0,9.37-8.79,62.62,62.62,0,0,0,14-3.91h0l.11,0a44.06,44.06,0,0,0,7.08-3.75l0,0a33.76,33.76,0,0,0,2.81-2.06l.05,0a24.14,24.14,0,0,0,4.08-4.21,4.74,4.74,0,0,0,1.16,0,4.6,4.6,0,0,0,4.05-5.08A4.77,4.77,0,0,0,120,60.91Zm-52.78-19c5.77-1.14,11.48-1.59,13.59-1.08a13.16,13.16,0,0,1,5.16,2.52,77.17,77.17,0,0,0-9.91.81,69.62,69.62,0,0,0-15.84,4.46A14.87,14.87,0,0,0,57,45.73l-.53-.41C57.69,44.49,61.08,43.13,67.18,41.92ZM15,79.62l-.41.1-.85.2c.23-3.23,1.56-7.15,6.25-9a1.77,1.77,0,0,0-.45-3.41c-4.06-.44-7.64-4.83-8.51-7.11a8.62,8.62,0,0,1,2.22-.24,32.52,32.52,0,0,1,17.63,6.11,2.77,2.77,0,0,0-.76,2.8,3.17,3.17,0,0,0,1.37,1.61C28.86,73.71,23.2,77.72,15,79.62ZM76.25,86.8a8.38,8.38,0,0,1-3,.57c-2.67,0-4.55-1.12-4.87-2A14,14,0,0,1,71,84.5a20.49,20.49,0,0,0,6.16-2.29,14.88,14.88,0,0,0,4.31-4.55c.94-1.37,1.56-2.21,2.34-2.38a.84.84,0,0,1,.32,0c.22.27.44,1.59-.16,3.62a1.89,1.89,0,0,0-.22.65A13,13,0,0,1,76.25,86.8Zm11.63-9.25A6.33,6.33,0,0,0,87,73.17a3.68,3.68,0,0,0-3.93-1.35c-2.2.48-3.38,2.19-4.51,3.84a14.88,14.88,0,0,1-2.31,2.82h-.11c-18.6.38-41.38-10.17-41.39-10.17s-.43-.31,0-.57h0A116.46,116.46,0,0,1,59.9,52.58a67.61,67.61,0,0,1,16.64-4.9A69.72,69.72,0,0,1,90,47c.91,0,1.82.11,2.71.2A16.24,16.24,0,0,0,88.3,60.43c.71,6.33,3.55,11.6,7.94,15A60.6,60.6,0,0,1,87.89,77.55Zm28.92-18.31a2.19,2.19,0,0,0-.1,3.07,2.87,2.87,0,0,1,.05.3,1.06,1.06,0,0,1-.93,1.16,1,1,0,0,1-.53-.08,2.11,2.11,0,0,0-2.62.81,19.68,19.68,0,0,1-4,4.25l-.07.07c-.75.61-1.58,1.22-2.47,1.81h0a42.63,42.63,0,0,1-5.3,2.93l-.21.08-.37.16c-4.7-2.58-7.78-7.55-8.48-13.77-.64-5.72,2-9.14,5.22-12.29,7.37,1.23,14.68,5.57,16.44,8.8a2.06,2.06,0,0,0,2.39,1h.05a1,1,0,0,1,.9,1.74Z"
-                      style="fill:#fff"/></g>
-              </svg>
-              <!-- End Icon SVG -->
-              <p>Local whitefish. Light, crispy breading, homemade tartar
-              sauce and fresh lemon.</p>
-              <p>1 piece .... 8.85</p>
-              <p>2 piece .... 13.27</p>
-              <p>3 piece .... 17.70</p>
-              <p>4 piece .... 22.12</p>
-              <p>Fish only .... 4.42</p>
+        <!--<img src="img/logo/logo-large.png" alt="the Port Logo" class="logo" />-->
+        <div class="banner">
+            <div class="parallax-window">
+                <div class="parallax-slider">
+                    <img class="banner-img" src="/img/banner/keyart-1.png">
+                    <img class="banner-img" src="/img/banner/keyart-2.png">
+                    <img class="banner-img" src="/img/banner/keyart-3_banner.png">
+                    <img class="banner-img" src="/img/banner/keyart-4_banner.png">
+                    <img class="banner-img" src="/img/banner/keyart-5_banner.png">
+                </div>
             </div>
+        </div>
 
-          <!-- Fries -->
-            <div id="menu-card" class="fries">
-                <h2>Fries &amp; Poutine</h2>
-                <!-- Icon: Fries -->
-                <svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-                    <title>fries</title>
-                    <path id="Fries"
-                        d="M113.39,60l-8.2,0,4.94-11.8a1.74,1.74,0,0,0-1.61-2.42h-14L100,30.52a1.74,1.74,0,0,0-1.82-2.33L87.75,29.3l1.32-12.42A1.75,1.75,0,0,0,87.21,15l-14.6,1.11L70.36,9.64a1.75,1.75,0,0,0-2.36-1L55.31,14.31l-.22-.68a1.74,1.74,0,0,0-2.31-1.08L36.07,19.22a1.74,1.74,0,0,0-1,2.09l1.1,4-11.08.09a1.75,1.75,0,0,0-1.43.77,1.71,1.71,0,0,0-.17,1.62L28,39.05H18.52a1.74,1.74,0,0,0-1.38.68,1.72,1.72,0,0,0-.31,1.5l4.75,18.47h-7a1.75,1.75,0,0,0-1.75,1.74c0,11.9.34,21.64,4.57,29.58,3.76,7.05,10.4,12.47,21.87,17.71a10.22,10.22,0,0,0-2.19,6.8,1.74,1.74,0,0,0,1.74,1.74h47a1.75,1.75,0,0,0,1.75-1.74,10.75,10.75,0,0,0-1.81-6.33c12.38-5.5,20.22-11.95,24.53-20.14s4.72-17.63,4.72-27.28A1.75,1.75,0,0,0,113.39,60Zm-7.49-10.76L101.4,60l-12.08,0L93.2,49.27ZM85.6,59.93l-11.92,0V59.7L84.12,33.2l11.66-1.25ZM70.19,34.11l0,25.76L56,59.81V38.58Zm14-4.43-1.5.16a1.74,1.74,0,0,0-1.44,1.1L73.68,50.18V31.73a1.75,1.75,0,0,0-2.27-1.66l-.71.22,1-10.65,13.7-1.05ZM67.7,12.58l1.4,4a1.72,1.72,0,0,0-.75,1.27L67.08,31.43l-5.67,1.78-5-15.56ZM38.82,21.88l13.52-5.39.25.76h0l5.49,17-4.36,1.38a1.73,1.73,0,0,0-1.22,1.66v9.57L44.67,26.34A1.75,1.75,0,0,0,43,25.22l-3.26,0Zm-11.17,7,14.2-.13L52.5,56.65v3.14l-10,0-6.28-19.5a1.75,1.75,0,0,0-1.66-1.21H31.71Zm-6.87,13.7H33.3l5.54,17.2-13.65,0Zm61,64.63H74.28a1.75,1.75,0,0,0,0,3.49h8c.51,0,1.4,1.17,1.76,3.11H40.77c.36-1.94,1.24-3.11,1.76-3.11H61a1.75,1.75,0,0,0,0-3.49H44.48c-13-5.44-20.21-10.76-24-17.8-3.36-6.29-4.09-13.87-4.15-26.19,17.14,0,93.87.34,95.25.34C111.49,82.58,108.74,96.06,81.76,107.18Z"
-                        style="fill:#fff"/>
-                      </svg>
-                <!-- End Icon SVG -->
-                <p>Local Potatoes. Golden and crispy, with thyme and salt.</p>
-                <p>Mini .... 2.65 / 4.42</p>
-                <p>Small .... 4.42 / 7.08</p>
-                <p>Large .... 5.31 / 8.85</p>
-              </div>
+        <!-- Menu Section -->
+        <div id="menu">
+            <h1>Menu Options</h1>
+            <div class="menu-board">
 
-            <!-- Tacos-->
-              <div id="menu-card" class="tacos">
-                  <h2>Tacos</h2>
-                  <!-- Icon: Tacos -->
-                  <svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-                      <title>taco</title>
-                      <g id="Taco"><path
-                          d="M114.39,67.6C110.72,59.69,104.07,52,95.64,46c-10-7.12-19.47-11.14-35-13.07a42.51,42.51,0,0,0-5.32-.48c-7.44,0-13.08,5.26-15.32,7.74a16.14,16.14,0,0,0-7.38-2c-6.33,0-9.89,4.7-11.37,7.27-1.92-.61-5.28-1.12-7.65,2.6-2.06,3.24-.61,7.08.64,9.35C10.9,59.19,9,61.35,8.63,63.91c-.6,4,2.7,7.27,4.14,8.5a68.35,68.35,0,0,0-5,20.93,1.84,1.84,0,0,0,1.85,2l104.42.16c2.3,0,3.08.14,4.84-2.19C122.5,88.56,117.8,75,114.39,67.6ZM12.29,64.46c.31-2,3.09-3.56,5.37-4.47a1.86,1.86,0,0,0,.77-2.86c-.88-1.13-3.07-4.83-1.68-7,1.05-1.65,2.18-1.56,4.18-.77a6.06,6.06,0,0,0,.81.28,1.86,1.86,0,0,0,2.17-1.11c0-.07,2.7-6.55,8.74-6.55a13.59,13.59,0,0,1,6.86,2.24,1.85,1.85,0,0,0,2.44-.48c.06-.08,5.72-7.51,13.41-7.51,4.53,0,7.89,1.63,10,4.86a13.15,13.15,0,0,1,2,5.41h0v0a1.86,1.86,0,0,0,.88,1.58,1.89,1.89,0,0,0,1.81.08c1.59-.81,6.28-2.47,8.88-.54,3.11,2.3,4,7,4.09,7.89a1.84,1.84,0,0,0,.49,1.39,1.86,1.86,0,0,0,1.82.54s3.87-.92,5.71,1.32c1.55,1.88.5,5.37,0,6.56a1.85,1.85,0,0,0,2,2.59s4.69-.65,6.31,2c1.36,2.24-2.43,5.12-2.46,5.15a1.86,1.86,0,0,0,.68,3.31c.26.06,5.08,1.34,6.87,4.9,1.38,2.76-1.19,6.58-2.79,8.41-.72,0-1.93,0-3.84-.05A78.33,78.33,0,0,0,79.73,62c-8.72-8.82-18.66-13.68-28-13.68a46.12,46.12,0,0,0-22.8,5.74A36.42,36.42,0,0,0,15.1,67.67c-.22.39-.44.8-.67,1.23C13.27,67.72,12.06,66,12.29,64.46Zm-.59,27.18A62.53,62.53,0,0,1,16.5,73.11c.28-.62.57-1.23.87-1.82s.65-1.26,1-1.81C23.09,61.05,34.37,52,51.74,52c8.33,0,17.34,4.46,25.35,12.57a74.35,74.35,0,0,1,16.69,27Zm104.75-1.05c-.94,1.25-1.64,1.26-4.25,1.17-.58,0-6,0-6,0,1.71-2.62,3.31-6.45,1.49-10.1a13.28,13.28,0,0,0-6.37-5.77c1.67-2.08,2.89-5,1.14-7.86s-4.9-3.66-7.22-3.82c.48-2.2.65-5.34-1.33-7.76-2.17-2.64-5.39-3-7.48-2.85a22.72,22.72,0,0,0-.66-2.27,14.27,14.27,0,0,0-4.64-6.65c-3.36-2.48-7.84-1.6-10.51-.7a16.93,16.93,0,0,0-2-4.72c-.26-.4-.54-.81-.86-1.22,22,4.6,37.42,18.4,43.31,31.15C117.76,83.71,117.22,89.56,116.45,90.59Z"
-                          style="fill:#fff"/><path d="M68.77,65.77a5.77,5.77,0,1,0,5.77,5.77A5.78,5.78,0,0,0,68.77,65.77Zm0,7.83a2.06,2.06,0,1,1,2.06-2.07A2.06,2.06,0,0,1,68.77,73.6Z" style="fill:#fff"/><path d="M59,76.42a5.77,5.77,0,1,0,5.77,5.77A5.77,5.77,0,0,0,59,76.42Zm0,7.83A2.06,2.06,0,1,1,61,82.19,2.06,2.06,0,0,1,59,84.26Z" style="fill:#fff"/><path d="M61.49,66.32a5.77,5.77,0,1,0-5.77,5.77A5.78,5.78,0,0,0,61.49,66.32Zm-7.83,0a2.06,2.06,0,1,1,2.07,2.06A2.07,2.07,0,0,1,53.66,66.32Z" style="fill:#fff"/></g>
-                  </svg>
-                  <!-- End Icon SVG -->
-                  <p>5.31 Each</p>
-                  <caption>Add Avocado 0.88</caption>
-                  <caption>On corn or flour tortillas</caption>
-                  <p>Fish <span>With cabbage, cilantro, crema / tartar / spicy tartar sauce</span></p>
-                  <p>Falafel <span>With cabbage, cilantro, green onion &amp; BBQ tahini sauce</span></p>
-                  <p>Spicy Beef <span>With green onion, cilantro, cabbage, jalapenos &amp; crema sauce</span></p>
-                  <p>Blackbean &amp; Corn <span>With green onion, cilantro, cabbage, jalapenos &amp; BBQ tahini sauce</span></p>
-              </div>
-
-            <!-- Snacks & Apps -->
-              <div id="menu-card" class="snacks">
-                  <h2>Snacks &amp; Apps</h2>
-                  <!-- Icon: snacks & apps -->
-                  <svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
-                      <title>falafel</title>
-                      <g id="falafel_revised" data-name="falafel revised"><path d="M86.54,70.45a26,26,0,1,1-5.15-15.53,25.58,25.58,0,0,1,2.85,4.84A25.87,25.87,0,0,1,86.54,70.45Z" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.0100317001342773px"/><path
-                          d="M113.93,46.86A25.58,25.58,0,0,0,111.07,42a26,26,0,0,0-43.8,3.32,26,26,0,0,1,14.12,9.58,25.58,25.58,0,0,1,2.85,4.84,26,26,0,0,1-.75,22.88,26,26,0,0,0,30.43-35.78Z"
-                          style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.0100317001342773px"/><path d="M34.54,70.45a26,26,0,0,1,25.63-26,25.41,25.41,0,0,0-1.54-2.31A26,26,0,1,0,37.78,83.69l.41,0A25.83,25.83,0,0,1,34.54,70.45Z" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.0100317001342773px"/>
-                          <g id="texture"><circle cx="75.69" cy="69.15" r="3.29" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.0100317001342773px"/><circle cx="68.81" cy="56.2" r="3.29" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.0100317001342773px"/><path d="M84.25,59.76a3.28,3.28,0,1,1-2.9-4.84" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.0100317001342773px"/></g>
-                      </g>
-                  </svg>
-                  <!-- End Icon SVG -->
-                  <h5>5.31 Each</h5>
-                  <div class="snacks">
-                    <p>Homemade Falafel</p>
-                    <p>Mozza Sticks</p>
-                    <p>Onion Rings</p>
-                    <p>Jalapeno Poppers</p>
-                  </div>
-                  <div class="dips">
-                    <h5>Dips</h5> <!--TODO add h5 css -->
-                    <p>BBQ Tahini</p>
-                    <p>Ranch</p>
-                    <p>Marinara</p>
-                    <p>Sour Cream</p>
-                  </div>
+                <!-- Fish & Chips -->
+                <div id="menu-card" class="fish-chips">
+                    <h2>Fish &amp; Chips</h2>
+                    <!-- Icon: Fish & Chips -->
+                    <svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                        <title>fish</title>
+                        <g id="Fish">
+                            <path d="M102.37,53.16a4.66,4.66,0,1,0,4.69,4.63A4.67,4.67,0,0,0,102.37,53.16Zm0,5.78a1.12,1.12,0,1,1,1.12-1.13A1.12,1.12,0,0,1,102.4,58.94Z" style="fill:#fff" />
+                            <path d="M120,60.91A4.59,4.59,0,0,0,116,54c-3.14-4.38-11.54-8.75-19.17-9.82l-.16,0H96.6c-1.79-.3-3.67-.5-5.59-.62a16.85,16.85,0,0,0-9.4-6.08c-3.1-.75-10,0-15.41,1.11C58.43,40.07,54,42,52.91,44.13a2.89,2.89,0,0,0,1,3.64l1,.76c.72.56,1.42,1.1,1.91,1.57A120.43,120.43,0,0,0,33.75,64a35,35,0,0,0-20.43-7.39h0c-2.72,0-4.4.54-5.29,1.65a2.77,2.77,0,0,0-.55,2.35c.53,2.43,3.45,6.86,7.62,9.09-4,3.22-4.79,7.93-4.86,10.82A2.83,2.83,0,0,0,11,82.69a3,3,0,0,0,2.25.84,10.06,10.06,0,0,0,2.25-.37l.38-.09c9.1-2.13,15.92-6.86,19-10.85C39.3,74.14,53.74,80,68.15,81.61a8.64,8.64,0,0,0-1.39.57,3.28,3.28,0,0,0-1.91,3.59c.49,3,4.12,5.16,8.43,5.13a11.79,11.79,0,0,0,4.26-.8,16.89,16.89,0,0,0,9.37-8.79,62.62,62.62,0,0,0,14-3.91h0l.11,0a44.06,44.06,0,0,0,7.08-3.75l0,0a33.76,33.76,0,0,0,2.81-2.06l.05,0a24.14,24.14,0,0,0,4.08-4.21,4.74,4.74,0,0,0,1.16,0,4.6,4.6,0,0,0,4.05-5.08A4.77,4.77,0,0,0,120,60.91Zm-52.78-19c5.77-1.14,11.48-1.59,13.59-1.08a13.16,13.16,0,0,1,5.16,2.52,77.17,77.17,0,0,0-9.91.81,69.62,69.62,0,0,0-15.84,4.46A14.87,14.87,0,0,0,57,45.73l-.53-.41C57.69,44.49,61.08,43.13,67.18,41.92ZM15,79.62l-.41.1-.85.2c.23-3.23,1.56-7.15,6.25-9a1.77,1.77,0,0,0-.45-3.41c-4.06-.44-7.64-4.83-8.51-7.11a8.62,8.62,0,0,1,2.22-.24,32.52,32.52,0,0,1,17.63,6.11,2.77,2.77,0,0,0-.76,2.8,3.17,3.17,0,0,0,1.37,1.61C28.86,73.71,23.2,77.72,15,79.62ZM76.25,86.8a8.38,8.38,0,0,1-3,.57c-2.67,0-4.55-1.12-4.87-2A14,14,0,0,1,71,84.5a20.49,20.49,0,0,0,6.16-2.29,14.88,14.88,0,0,0,4.31-4.55c.94-1.37,1.56-2.21,2.34-2.38a.84.84,0,0,1,.32,0c.22.27.44,1.59-.16,3.62a1.89,1.89,0,0,0-.22.65A13,13,0,0,1,76.25,86.8Zm11.63-9.25A6.33,6.33,0,0,0,87,73.17a3.68,3.68,0,0,0-3.93-1.35c-2.2.48-3.38,2.19-4.51,3.84a14.88,14.88,0,0,1-2.31,2.82h-.11c-18.6.38-41.38-10.17-41.39-10.17s-.43-.31,0-.57h0A116.46,116.46,0,0,1,59.9,52.58a67.61,67.61,0,0,1,16.64-4.9A69.72,69.72,0,0,1,90,47c.91,0,1.82.11,2.71.2A16.24,16.24,0,0,0,88.3,60.43c.71,6.33,3.55,11.6,7.94,15A60.6,60.6,0,0,1,87.89,77.55Zm28.92-18.31a2.19,2.19,0,0,0-.1,3.07,2.87,2.87,0,0,1,.05.3,1.06,1.06,0,0,1-.93,1.16,1,1,0,0,1-.53-.08,2.11,2.11,0,0,0-2.62.81,19.68,19.68,0,0,1-4,4.25l-.07.07c-.75.61-1.58,1.22-2.47,1.81h0a42.63,42.63,0,0,1-5.3,2.93l-.21.08-.37.16c-4.7-2.58-7.78-7.55-8.48-13.77-.64-5.72,2-9.14,5.22-12.29,7.37,1.23,14.68,5.57,16.44,8.8a2.06,2.06,0,0,0,2.39,1h.05a1,1,0,0,1,.9,1.74Z"
+                                  style="fill:#fff" />
+                        </g>
+                    </svg>
+                    <!-- End Icon SVG -->
+                    <p>
+                        Local whitefish. Light, crispy breading, homemade tartar
+                        sauce and fresh lemon.
+                    </p>
+                    <p>1 piece .... 8.85</p>
+                    <p>2 piece .... 13.27</p>
+                    <p>3 piece .... 17.70</p>
+                    <p>4 piece .... 22.12</p>
+                    <p>Fish only .... 4.42</p>
                 </div>
 
-              <!-- TODO Kids Menu ( icon ) -->
+                <!-- Fries -->
+                <div id="menu-card" class="fries">
+                    <h2>Fries &amp; Poutine</h2>
+                    <!-- Icon: Fries -->
+                    <svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                        <title>fries</title>
+                        <path id="Fries"
+                              d="M113.39,60l-8.2,0,4.94-11.8a1.74,1.74,0,0,0-1.61-2.42h-14L100,30.52a1.74,1.74,0,0,0-1.82-2.33L87.75,29.3l1.32-12.42A1.75,1.75,0,0,0,87.21,15l-14.6,1.11L70.36,9.64a1.75,1.75,0,0,0-2.36-1L55.31,14.31l-.22-.68a1.74,1.74,0,0,0-2.31-1.08L36.07,19.22a1.74,1.74,0,0,0-1,2.09l1.1,4-11.08.09a1.75,1.75,0,0,0-1.43.77,1.71,1.71,0,0,0-.17,1.62L28,39.05H18.52a1.74,1.74,0,0,0-1.38.68,1.72,1.72,0,0,0-.31,1.5l4.75,18.47h-7a1.75,1.75,0,0,0-1.75,1.74c0,11.9.34,21.64,4.57,29.58,3.76,7.05,10.4,12.47,21.87,17.71a10.22,10.22,0,0,0-2.19,6.8,1.74,1.74,0,0,0,1.74,1.74h47a1.75,1.75,0,0,0,1.75-1.74,10.75,10.75,0,0,0-1.81-6.33c12.38-5.5,20.22-11.95,24.53-20.14s4.72-17.63,4.72-27.28A1.75,1.75,0,0,0,113.39,60Zm-7.49-10.76L101.4,60l-12.08,0L93.2,49.27ZM85.6,59.93l-11.92,0V59.7L84.12,33.2l11.66-1.25ZM70.19,34.11l0,25.76L56,59.81V38.58Zm14-4.43-1.5.16a1.74,1.74,0,0,0-1.44,1.1L73.68,50.18V31.73a1.75,1.75,0,0,0-2.27-1.66l-.71.22,1-10.65,13.7-1.05ZM67.7,12.58l1.4,4a1.72,1.72,0,0,0-.75,1.27L67.08,31.43l-5.67,1.78-5-15.56ZM38.82,21.88l13.52-5.39.25.76h0l5.49,17-4.36,1.38a1.73,1.73,0,0,0-1.22,1.66v9.57L44.67,26.34A1.75,1.75,0,0,0,43,25.22l-3.26,0Zm-11.17,7,14.2-.13L52.5,56.65v3.14l-10,0-6.28-19.5a1.75,1.75,0,0,0-1.66-1.21H31.71Zm-6.87,13.7H33.3l5.54,17.2-13.65,0Zm61,64.63H74.28a1.75,1.75,0,0,0,0,3.49h8c.51,0,1.4,1.17,1.76,3.11H40.77c.36-1.94,1.24-3.11,1.76-3.11H61a1.75,1.75,0,0,0,0-3.49H44.48c-13-5.44-20.21-10.76-24-17.8-3.36-6.29-4.09-13.87-4.15-26.19,17.14,0,93.87.34,95.25.34C111.49,82.58,108.74,96.06,81.76,107.18Z"
+                              style="fill:#fff" />
+                    </svg>
+                    <!-- End Icon SVG -->
+                    <p>Local Potatoes. Golden and crispy, with thyme and salt.</p>
+                    <p>Mini .... 2.65 / 4.42</p>
+                    <p>Small .... 4.42 / 7.08</p>
+                    <p>Large .... 5.31 / 8.85</p>
+                </div>
+                <!-- Tacos-->
+                <div id="menu-card" class="tacos">
+                    <h2>Tacos</h2>
+                    <!-- Icon: Tacos -->
+                    <svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                        <title>taco</title>
+                        <g id="Taco">
+                            <path d="M114.39,67.6C110.72,59.69,104.07,52,95.64,46c-10-7.12-19.47-11.14-35-13.07a42.51,42.51,0,0,0-5.32-.48c-7.44,0-13.08,5.26-15.32,7.74a16.14,16.14,0,0,0-7.38-2c-6.33,0-9.89,4.7-11.37,7.27-1.92-.61-5.28-1.12-7.65,2.6-2.06,3.24-.61,7.08.64,9.35C10.9,59.19,9,61.35,8.63,63.91c-.6,4,2.7,7.27,4.14,8.5a68.35,68.35,0,0,0-5,20.93,1.84,1.84,0,0,0,1.85,2l104.42.16c2.3,0,3.08.14,4.84-2.19C122.5,88.56,117.8,75,114.39,67.6ZM12.29,64.46c.31-2,3.09-3.56,5.37-4.47a1.86,1.86,0,0,0,.77-2.86c-.88-1.13-3.07-4.83-1.68-7,1.05-1.65,2.18-1.56,4.18-.77a6.06,6.06,0,0,0,.81.28,1.86,1.86,0,0,0,2.17-1.11c0-.07,2.7-6.55,8.74-6.55a13.59,13.59,0,0,1,6.86,2.24,1.85,1.85,0,0,0,2.44-.48c.06-.08,5.72-7.51,13.41-7.51,4.53,0,7.89,1.63,10,4.86a13.15,13.15,0,0,1,2,5.41h0v0a1.86,1.86,0,0,0,.88,1.58,1.89,1.89,0,0,0,1.81.08c1.59-.81,6.28-2.47,8.88-.54,3.11,2.3,4,7,4.09,7.89a1.84,1.84,0,0,0,.49,1.39,1.86,1.86,0,0,0,1.82.54s3.87-.92,5.71,1.32c1.55,1.88.5,5.37,0,6.56a1.85,1.85,0,0,0,2,2.59s4.69-.65,6.31,2c1.36,2.24-2.43,5.12-2.46,5.15a1.86,1.86,0,0,0,.68,3.31c.26.06,5.08,1.34,6.87,4.9,1.38,2.76-1.19,6.58-2.79,8.41-.72,0-1.93,0-3.84-.05A78.33,78.33,0,0,0,79.73,62c-8.72-8.82-18.66-13.68-28-13.68a46.12,46.12,0,0,0-22.8,5.74A36.42,36.42,0,0,0,15.1,67.67c-.22.39-.44.8-.67,1.23C13.27,67.72,12.06,66,12.29,64.46Zm-.59,27.18A62.53,62.53,0,0,1,16.5,73.11c.28-.62.57-1.23.87-1.82s.65-1.26,1-1.81C23.09,61.05,34.37,52,51.74,52c8.33,0,17.34,4.46,25.35,12.57a74.35,74.35,0,0,1,16.69,27Zm104.75-1.05c-.94,1.25-1.64,1.26-4.25,1.17-.58,0-6,0-6,0,1.71-2.62,3.31-6.45,1.49-10.1a13.28,13.28,0,0,0-6.37-5.77c1.67-2.08,2.89-5,1.14-7.86s-4.9-3.66-7.22-3.82c.48-2.2.65-5.34-1.33-7.76-2.17-2.64-5.39-3-7.48-2.85a22.72,22.72,0,0,0-.66-2.27,14.27,14.27,0,0,0-4.64-6.65c-3.36-2.48-7.84-1.6-10.51-.7a16.93,16.93,0,0,0-2-4.72c-.26-.4-.54-.81-.86-1.22,22,4.6,37.42,18.4,43.31,31.15C117.76,83.71,117.22,89.56,116.45,90.59Z"
+                                  style="fill:#fff" />
+                            <path d="M68.77,65.77a5.77,5.77,0,1,0,5.77,5.77A5.78,5.78,0,0,0,68.77,65.77Zm0,7.83a2.06,2.06,0,1,1,2.06-2.07A2.06,2.06,0,0,1,68.77,73.6Z" style="fill:#fff" />
+                            <path d="M59,76.42a5.77,5.77,0,1,0,5.77,5.77A5.77,5.77,0,0,0,59,76.42Zm0,7.83A2.06,2.06,0,1,1,61,82.19,2.06,2.06,0,0,1,59,84.26Z" style="fill:#fff" />
+                            <path d="M61.49,66.32a5.77,5.77,0,1,0-5.77,5.77A5.78,5.78,0,0,0,61.49,66.32Zm-7.83,0a2.06,2.06,0,1,1,2.07,2.06A2.07,2.07,0,0,1,53.66,66.32Z" style="fill:#fff" />
+                        </g>
+                    </svg>
+                    <!-- End Icon SVG -->
+                    <p>5.31 Each</p>
+                    <caption>Add Avocado 0.88</caption>
+                    <caption>On corn or flour tortillas</caption>
+                    <p>Fish <span>With cabbage, cilantro, crema / tartar / spicy tartar sauce</span></p>
+                    <p>Falafel <span>With cabbage, cilantro, green onion &amp; BBQ tahini sauce</span></p>
+                    <p>Spicy Beef <span>With green onion, cilantro, cabbage, jalapenos &amp; crema sauce</span></p>
+                    <p>Blackbean &amp; Corn <span>With green onion, cilantro, cabbage, jalapenos &amp; BBQ tahini sauce</span></p>
+                </div>
+
+                <!-- Snacks & Apps -->
+                <div id="menu-card" class="snacks">
+                    <h2>Snacks &amp; Apps</h2>
+                    <!-- Icon: snacks & apps -->
+                    <svg id="icons" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128">
+                        <title>falafel</title>
+                        <g id="falafel_revised" data-name="falafel revised">
+                            <path d="M86.54,70.45a26,26,0,1,1-5.15-15.53,25.58,25.58,0,0,1,2.85,4.84A25.87,25.87,0,0,1,86.54,70.45Z" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.0100317001342773px" />
+                            <path d="M113.93,46.86A25.58,25.58,0,0,0,111.07,42a26,26,0,0,0-43.8,3.32,26,26,0,0,1,14.12,9.58,25.58,25.58,0,0,1,2.85,4.84,26,26,0,0,1-.75,22.88,26,26,0,0,0,30.43-35.78Z"
+                                  style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.0100317001342773px" />
+                            <path d="M34.54,70.45a26,26,0,0,1,25.63-26,25.41,25.41,0,0,0-1.54-2.31A26,26,0,1,0,37.78,83.69l.41,0A25.83,25.83,0,0,1,34.54,70.45Z" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.0100317001342773px" />
+                            <g id="texture"><circle cx="75.69" cy="69.15" r="3.29" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.0100317001342773px" /><circle cx="68.81" cy="56.2" r="3.29" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.0100317001342773px" /><path d="M84.25,59.76a3.28,3.28,0,1,1-2.9-4.84" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:2.0100317001342773px" /></g>
+                        </g>
+                    </svg>
+                    <!-- End Icon SVG -->
+                    <h5>5.31 Each</h5>
+                    <div class="snacks">
+                        <p>Homemade Falafel</p>
+                        <p>Mozza Sticks</p>
+                        <p>Onion Rings</p>
+                        <p>Jalapeno Poppers</p>
+                    </div>
+                    <div class="dips">
+                        <h5>Dips</h5> <!--TODO add h5 css -->
+                        <p>BBQ Tahini</p>
+                        <p>Ranch</p>
+                        <p>Marinara</p>
+                        <p>Sour Cream</p>
+                    </div>
+                </div>
+
+                <!-- TODO Kids Menu ( icon ) -->
                 <div id="menu-card" class="kids">
                     <h2>Kids Menu</h2>
                     <!-- Icon: Kids Menu -->
@@ -171,17 +186,21 @@
                         <title>kids</title>
                         <g id="kids">
                             <g id="boy">
-                                <g id="face"><circle cx="80.75" cy="53.46" r="3.38" transform="translate(-11.13 84.04) rotate(-51.92)" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px"/><circle cx="95.1" cy="60.41" r="3.38" transform="translate(-11.11 98.01) rotate(-51.92)" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px"/><path d="M73.64,62.52l19.42,8.7a11.24,11.24,0,0,1-12.94,2.85C72.23,70.75,73.64,62.52,73.64,62.52Z" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px"/></g><path
-                                    id="face-2"
-                                    data-name="face"
-                                    d="M69,72a20.43,20.43,0,0,0,37.29-14.11c-2.63-.85-5.48-3.1-8.26-7.22-7.41-11-19.93-7.68-19.32-8.84l.1-.21a20.44,20.44,0,0,0-10.22,8.49"
-                                    style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px"/><path id="hair" d="M78.75,41.81c-.61,1.17,11.92-2.12,19.32,8.84s15.26,8.71,18.28,1.89c-4.21-.11-5.84,1.17-12.45-8.83C97.12,33.47,83.61,30.63,78.75,41.81Z" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px"/></g>
+                                <g id="face"><circle cx="80.75" cy="53.46" r="3.38" transform="translate(-11.13 84.04) rotate(-51.92)" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px" /><circle cx="95.1" cy="60.41" r="3.38" transform="translate(-11.11 98.01) rotate(-51.92)" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px" /><path d="M73.64,62.52l19.42,8.7a11.24,11.24,0,0,1-12.94,2.85C72.23,70.75,73.64,62.52,73.64,62.52Z" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px" /></g>
+                                <path id="face-2"
+                                      data-name="face"
+                                      d="M69,72a20.43,20.43,0,0,0,37.29-14.11c-2.63-.85-5.48-3.1-8.26-7.22-7.41-11-19.93-7.68-19.32-8.84l.1-.21a20.44,20.44,0,0,0-10.22,8.49"
+                                      style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px" />
+                                <path id="hair" d="M78.75,41.81c-.61,1.17,11.92-2.12,19.32,8.84s15.26,8.71,18.28,1.89c-4.21-.11-5.84,1.17-12.45-8.83C97.12,33.47,83.61,30.63,78.75,41.81Z" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px" />
+                            </g>
                             <g id="girl">
-                                <g id="face-3" data-name="face"><circle cx="36.41" cy="63.43" r="3.85" transform="translate(-6.68 4.34) rotate(-6.25)" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px"/><circle cx="53.64" cy="57.67" r="3.85" transform="translate(-5.96 6.18) rotate(-6.25)" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px"/><path d="M37.84,76.46,60.57,68.1A12.8,12.8,0,0,1,52.3,80.72C43.23,84.3,37.84,76.46,37.84,76.46Z" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px"/></g><path
-                                    d="M68.69,58c-1.11-2.83-3.69-6.74-10.18-9.82-7-2.12-15.84-.42-19-5.22-.37.12-.74.25-1.1.39.2,1.64-.59,3.68-2.59,5.93-3.73,4.2-7.83,4.83-10.09,13.55a36.21,36.21,0,0,0-1.16,9.87A23.26,23.26,0,0,0,68.69,58Z"
-                                    style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px"/><path
-                                    d="M35.81,49.24c6.69-7.54-.08-12.72-12.45-8.2C7.28,46.92,12.17,61.46,13,68.31c.81,7.09,3.63,16.39,1.42,25.06,2.18-.34,7.19-1.43,9.14-4.89,3.83-6.79-1-13.29,2.21-25.69C28,54.07,32.08,53.44,35.81,49.24Z"
-                                    style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px"/><path d="M69.85,61.53c-.77,1.28.95-7.57-11.35-13.4-7.25-2.21-16.6-.25-19.39-5.83C48.26,31.43,72.22,40.73,69.85,61.53Z" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px"/></g>
+                                <g id="face-3" data-name="face"><circle cx="36.41" cy="63.43" r="3.85" transform="translate(-6.68 4.34) rotate(-6.25)" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px" /><circle cx="53.64" cy="57.67" r="3.85" transform="translate(-5.96 6.18) rotate(-6.25)" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px" /><path d="M37.84,76.46,60.57,68.1A12.8,12.8,0,0,1,52.3,80.72C43.23,84.3,37.84,76.46,37.84,76.46Z" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px" /></g>
+                                <path d="M68.69,58c-1.11-2.83-3.69-6.74-10.18-9.82-7-2.12-15.84-.42-19-5.22-.37.12-.74.25-1.1.39.2,1.64-.59,3.68-2.59,5.93-3.73,4.2-7.83,4.83-10.09,13.55a36.21,36.21,0,0,0-1.16,9.87A23.26,23.26,0,0,0,68.69,58Z"
+                                      style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px" />
+                                <path d="M35.81,49.24c6.69-7.54-.08-12.72-12.45-8.2C7.28,46.92,12.17,61.46,13,68.31c.81,7.09,3.63,16.39,1.42,25.06,2.18-.34,7.19-1.43,9.14-4.89,3.83-6.79-1-13.29,2.21-25.69C28,54.07,32.08,53.44,35.81,49.24Z"
+                                      style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px" />
+                                <path d="M69.85,61.53c-.77,1.28.95-7.57-11.35-13.4-7.25-2.21-16.6-.25-19.39-5.83C48.26,31.43,72.22,40.73,69.85,61.53Z" style="fill:none;stroke:#fff;stroke-miterlimit:10;stroke-width:1.8913952708244324px" />
+                            </g>
                         </g>
                     </svg>
                     <!-- End Icon SVG -->
@@ -190,7 +209,8 @@
                     <p>Poutine .... 4.42</p>
                     <p>Basic Taco .... 4.42</p>
                     <p>Grilled Cheese .... 4.42</p>
-                  </div>
+                </div>
+
 
                 <!-- TODO Smoothie ( icon ) -->
                   <div id="menu-card" class="smoothie">
@@ -215,9 +235,6 @@
               </div>
             </div> <!-- close menu-board div-->
           </div>
-
-
-
 
 
 <!-- ========================= Hours and Location =========================-->
@@ -436,23 +453,26 @@
 
 
           </footer>
-    </div><!--end page div-->
 
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="js/vendor/parallax.min.js"></script>
 
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
+    <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 
-        <script src="js/plugins.js"></script>
-        <script src="js/main.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/main.js"></script>
 
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
-        </script>
-    </body>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+        (function (b, o, i, l, e, r) {
+            b.GoogleAnalyticsObject = l; b[l] || (b[l] =
+            function () { (b[l].q = b[l].q || []).push(arguments) }); b[l].l = +new Date;
+            e = o.createElement(i); r = o.getElementsByTagName(i)[0];
+            e.src = '//www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e, r)
+        }(window, document, 'script', 'ga'));
+        ga('create', 'UA-XXXXX-X', 'auto'); ga('send', 'pageview');
+    </script>
+</body>
+
 </html>
