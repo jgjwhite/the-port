@@ -35,49 +35,41 @@
 </head>
 
 
-
-
-
-
-<body class="container-fluid">
+<body>
     <!--Facebook Js SDK Plugin-->
     <div id="fb-root"></div>
     <script>
-(function (d, s, id) {
-    var js, fjs = d.getElementsByTagName(s)[0];
-    if (d.getElementById(id)) return;
-    js = d.createElement(s); js.id = id;
-    js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
-    fjs.parentNode.insertBefore(js, fjs);
-}(document, 'script', 'facebook-jssdk'));</script>
+        (function (d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));</script>
 
-
-    <div id="page">
-
-        <!-- Banner section; why include nav in this section?? -->
-        <div class="nav">
-            <ul class="nav nav-tabs">
-                <li><a href="#menu">Menu</a></li>
-                <li><a href="#hours">Hours &amp; Location</a></li>
-                <li><a href="#news">News &amp; Specials</a></li>
-                <li><a href="#about">About Us</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
+    <!-- Banner section; why include nav in this section?? -->
+    <div class="nav navbar-fixed-top">
+        <ul class="nav nav-tabs">
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#hours">Hours &amp; Location</a></li>
+            <li><a href="#news">News &amp; Specials</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </div>
 
         <!--<img src="img/logo/logo-large.png" alt="the Port Logo" class="logo" />-->
+    <div class="logo"><img class="img-logo" src="/img/logo/logo-large.png" alt="The Port Logo" /></div>
         <div class="banner">
-            <div class="parallax-window">
-                <div class="parallax-slider">
-                    <img class="banner-img" src="/img/banner/keyart-1.png">
-                    <img class="banner-img" src="/img/banner/keyart-2.png">
-                    <img class="banner-img" src="/img/banner/keyart-3_banner.png">
-                    <img class="banner-img" src="/img/banner/keyart-4_banner.png">
-                    <img class="banner-img" src="/img/banner/keyart-5_banner.png">
-                </div>
+            <div id="little-current">
+                <div class="layer layer-00" data-type="parallax" data-depth="0.00"></div>
+                <div class="layer layer-01" data-type="parallax" data-depth="0.10"></div>
+                <div class="layer layer-02" data-type="parallax" data-depth="0.20"></div>
+                <div class="layer layer-03" data-type="parallax" data-depth="0.30"></div>
+                <div class="layer layer-04" data-type="parallax" data-depth="0.40"></div>
             </div>
         </div>
-
+    <div id="page" class="container-fluid">
         <!-- Menu Section -->
         <div id="menu">
             <h1>Menu Options</h1>
@@ -317,7 +309,6 @@
 
             </div><!-- end div info-card-->
         </div><!--end div hours-->
-    </div>
 
     <!-- News & Specials-->
     <div id="news">
@@ -340,7 +331,6 @@
 
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/vendor/parallax.min.js"></script>
 
     <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.min.js"><\/script>')</script>
 

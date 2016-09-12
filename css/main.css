@@ -28,6 +28,7 @@ font-family: 'Oswald', sans-serif;
     background: #b3d4fc;
     text-shadow: none;
 }
+
 fieldset {
     border: 0;
     margin: 0;
@@ -50,11 +51,11 @@ textarea {
    Helper classes
    ========================================================================== */
 
-   .group:after {
-     content: "";
-     display: table;
-     clear: both;
-   }
+.group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /* ==========================================================================
    Universal Styles
@@ -68,45 +69,46 @@ html {
     -moz-box-sizing: border-box;
     box-sizing: border-box;
 }
+
 *, *:before, *:after {
-  -webkit-box-sizing: inherit;
-  -moz-box-sizing: inherit;
-  box-sizing: inherit;
-  }
+    -webkit-box-sizing: inherit;
+    -moz-box-sizing: inherit;
+    box-sizing: inherit;
+}
 
 
-    h1 {
-      margin-bottom: 20px;
-      margin-left: 2%;
+h1 {
+    margin-bottom: 20px;
+    margin-left: 2%;
+    /* Lobster, headlines */
+    font-family: 'Lobster', cursive;
+    /* target - default = em; 32 - 16 = 2em */
+    font-size: 2.2em;
+    color: rgb(255,255,255);
+}
 
-      /* Lobster, headlines */
+h2 {
+    /* Bebas Neue*/
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.5em; /* 24px */
+    color: rgb(255,255,255);
+    text-transform: uppercase;
+}
 
-      font-family: 'Lobster', cursive;
-      /* target - default = em; 32 - 16 = 2em */
-      font-size: 2.2em;
-      color: rgb(255,255,255);
+h3 {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    text-transform: uppercase;
+}
 
-    }
-    h2 {
-      /* Bebas Neue*/
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.5em; /* 24px */
-      color: rgb(255,255,255);
-      text-transform: uppercase;
-    }
-    h3 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 1.2em;
-      text-transform: uppercase;
-    }
-    body {
-      /* Avenir*/
-      font-family: 'Nunito', sans-serif;
-      color: rgb( 0,0,0 );
-      font-size: 0.95em;
-      font-weight: 300;
-      background-color: rgba(26,71,112,1);
-    }
+body {
+    /* Avenir*/
+    font-family: 'Nunito', sans-serif;
+    color: rgb( 0,0,0 );
+    font-size: 0.95em;
+    font-weight: 300;
+    background-color: rgba(26,71,112,1);
+}
 
 
 /* ==========================================================================
@@ -114,153 +116,219 @@ html {
    ========================================================================== */
 
 #page {
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+    top: 25px;
+    background-color: rgba(26,71,112,1);
 }
-    nav {
-      display: flex;
-      list-style-type: none;
-    }
-    nav li {
-      text-decoration: none;
-      color: #000;
 
+nav {
+    display: flex;
+    list-style-type: none;
+}
+
+    nav li {
+        text-decoration: none;
+        color: #000;
     }
-    nav li a {
-      text-decoration: none;
-      color: #000;
-    }
+
+        nav li a {
+            text-decoration: none;
+            color: #000;
+        }
 
 /* Banner */
-    /* TODO Possible to stretch the image across the viewport, but not ruin integrity? */
-    .parallax-window {
-      min-height: 400px;
-      background-color: transparent;
-    }
-    .banner {
-      /*width: 100%;
-      height: 100vh;*/
-      min-height: 400px;
-      background: transparent;
-      /*background: url(../img/dummy-2-01.png) no-repeat center center;*/
-      /*-webkit-background-size: cover;*/
-      /* TODO add moz, o webkits */
-      /*background-size: cover;*/
+/* TODO Possible to stretch the image across the viewport, but not ruin integrity? */
+
+.banner {
+    width: 100%;
+    /*height: 100vh;*/
+    min-height: 400px;
+    background: transparent;
+    margin-top: 40px;
+    /*background: url(../img/dummy-2-01.png) no-repeat center center;*/
+    /*-webkit-background-size: cover;*/
+    /* TODO add moz, o webkits */
+    /*background-size: cover;*/
+}
+
+.banner-img {
+    position: absolute;
+    width: 1000px;
+    height: 500px;
+}
+
+#little-current {
+    height: 800px;
+    overflow: hidden;
+    position: relative;
+}
+
+    #little-current .layer {
+        background-position: bottom center;
+        background-size: auto;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 800px;
+        position: fixed;
+        z-index: -1;
     }
 
-    .banner-img {
-        position:absolute;
-        width: 1000px;
-        height: 500px;
-    }
+.layer.layer-00 {
+    background-image: url('/img/banner/keyart-1.png');
+    width: 100%;
+}
 
-    .logo {
-      /* TODO Position logo using co-ordinates */
-      height: 240px;
-      width: 240px;
-      display: block;
-      margin: 0 auto;
+.layer.layer-01 {
+    background-image: url('/img/banner/keyart-2.png');
+    width: 100%;
+}
 
-    }
+.layer.layer-02 {
+    background-image: url('/img/banner/keyart-3_banner.png');
+    width: 120%;
+    animation-name: up-down;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.layer.layer-03 {
+    background-image: url('/img/banner/keyart-4_banner.png');
+    width: 120%;
+    animation-name: down-up;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+.layer.layer-04 {
+    background-image: url('/img/banner/keyart-5_banner.png');
+    width: 120%;
+    animation-name: up-down;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+
+.logo {
+    /* TODO Position logo using co-ordinates */
+    height: 100px;
+    width: 100vw;
+    display: flex;
+    margin-top: 40px;
+    position: fixed;
+    justify-content: center;
+}
+
+.img-logo {
+    width: 200px;
+    height: 150px;
+}
 
 /* Menu Section */
-      .menu {
-          width: 100%;
-          margin-bottom: 60px;
-          /* %% grid !! */
-      }
-      .menu-board {
-        width: 90%;
-        height: 100%;
-        background-color: rgb(75,75,75);
-        margin: 0 auto;
+.menu {
+    width: 100%;
+    margin-bottom: 60px;
+    /* %% grid !! */
+}
 
-        /* flex items, center horizontally */
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+.menu-board {
+    width: 90%;
+    height: 100%;
+    background-color: rgb(75,75,75);
+    margin: 0 auto;
+    /* flex items, center horizontally */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
-      }
-      #menu-card { /* Controls appearance of menu groupings */
-        width: 90%;
+#menu-card { /* Controls appearance of menu groupings */
+    width: 90%;
+    /* padding, margin values on menu cards */
+    padding: 5%;
+    margin: 20px 0 20px 0;
+    color: rgb( 255,255,255 );
+    border: 4px solid rgb(170,34,47);
+}
 
-        /* padding, margin values on menu cards */
-        padding: 5%;
-        margin: 20px 0 20px 0;
+svg {
+    width: 48px;
+    height: 48px;
+}
 
-        color: rgb( 255,255,255 );
-        border: 4px solid rgb(170,34,47);
-        
-      }
-
-      svg {
-        width: 48px;
-        height: 48px;
-      }
-      .caveats {
-        width:100%;
-        margin: 20px 0 20px 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
+.caveats {
+    width: 100%;
+    margin: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 /* Hours and Location */
-      .map-bkgd {
-        width: 100%;
-        padding-bottom: 75%;
-        margin-bottom: 20px;
-        background: url(../img/map-sample.jpg) no-repeat center center;
-        -webkit-background-size: cover;
-        /* TODO add moz, o webkits */
-        background-size: cover;
-      }
+.map-bkgd {
+    width: 100%;
+    padding-bottom: 75%;
+    margin-bottom: 20px;
+    background: url(../img/map-sample.jpg) no-repeat center center;
+    -webkit-background-size: cover;
+    /* TODO add moz, o webkits */
+    background-size: cover;
+}
 
 
-      .info-card {
-        width: 90%;
-        height: 100%;
-        background-color: rgb(215,215,215);
-        margin: 0 auto;
-        margin-bottom: 40px;
-        padding: 5%;
+.info-card {
+    width: 90%;
+    height: 100%;
+    background-color: rgb(215,215,215);
+    margin: 0 auto;
+    margin-bottom: 40px;
+    padding: 5%;
+    display: flex;
+    flex-direction: column;
+}
 
-        display: flex;
-        flex-direction: column;
-      }
-          .contact-info {
-            display: flex;
-          }
+.contact-info {
+    display: flex;
+}
 
-          .flex-hours {
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-          }
-          .info-card ul{
-            width: 50%;
-            padding-left: 0px;
-            list-style-type: none;
-          }
-          .info-card ul li {
-            text-decoration: none;
-          }
+.flex-hours {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.info-card ul {
+    width: 50%;
+    padding-left: 0px;
+    list-style-type: none;
+}
+
+    .info-card ul li {
+        text-decoration: none;
+    }
 
 /* News & Specials */
-  #news {
-      width: 100%;
-      margin: 0px;
-      padding: 0px;
-  }
-    .fb-card {
-      width: 90%;
-      height: 520px;
-      margin: 0 auto;
+#news {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 
-      display: flex;
-      justify-content: center;
-    }
+.fb-card {
+    width: 90%;
+    height: 520px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
 
 
 
@@ -273,19 +341,53 @@ html {
 
 
 @media (min-width: 640px) {
-  html {
-    max-width: 960px;
-    margin: 0 auto;
-  }
-  .banner {
-    background: url(../img/dummy-image.png) no-repeat center center;
-  }
-  .logo {
-    /* TODO Position logo using co-ordinates */
-    height: 480px;
-    width: 480px;
-    display: block;
-    margin: 0 auto;
+    html {
+        /*max-width: 960px;*/
+        margin: 0 auto;
+    }
 
-  }
+    .banner {
+        background: url(../img/dummy-image.png) no-repeat center center;
+    }
+
+    .logo1 {
+        /* TODO Position logo using co-ordinates */
+        height: 480px;
+        width: 480px;
+        display: block;
+        margin: 0 auto;
+    }
+}
+
+
+/*  ==========================================================================
+    Animations
+    ========================================================================== */
+
+@keyframes up-down {
+    0% {
+        top: 0%;
+    }
+
+    50% {
+        top: 0.75%;
+    }
+
+    100% {
+        top: 1.25%;
+    }
+}
+
+@keyframes down-up {
+    0% {
+        top: 1.25%;
+    }
+
+    50% {
+        top: 0.75%;
+    }
+
+    100% {
+        top: 0%;
+    }
 }
