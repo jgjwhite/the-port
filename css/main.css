@@ -178,17 +178,17 @@ body {
     }
 
 .layer.layer-00 {
-    background-image: url('/img/banner/keyart-1-a.png');
+    background-image: url('../img/banner/keyart-1-a.png');
     width: 100%;
 }
 
 .layer.layer-01 {
-    background-image: url('/img/banner/keyart-2.png');
+    background-image: url('../img/banner/keyart-2.png');
     width: 100%;
 }
 
 .layer.layer-02 {
-    background-image: url('/img/banner/keyart-3_banner.png');
+    background-image: url('../img/banner/keyart-3_banner.png');
     width: 120%;
     animation-name: up-down;
     animation-direction: alternate;
@@ -198,7 +198,7 @@ body {
 }
 
 .layer.layer-03 {
-    background-image: url('/img/banner/keyart-4_banner.png');
+    background-image: url('../img/banner/keyart-4_banner.png');
     width: 120%;
     animation-name: down-up;
     animation-direction: alternate;
@@ -208,7 +208,7 @@ body {
 }
 
 .layer.layer-04 {
-    background-image: url('/img/banner/keyart-5_banner.png');
+    background-image: url('../img/banner/keyart-5_banner.png');
     width: 120%;
     animation-name: up-down;
     animation-direction: alternate;
@@ -219,12 +219,11 @@ body {
 
 
 .logo {
-    /* TODO Position logo using co-ordinates */
     height: 100px;
     width: 100vw;
     display: flex;
-    margin-top: 40px;
-    position: fixed;
+    margin-top: 120px;
+    /*position: fixed;*/
     justify-content: center;
 }
 
@@ -340,10 +339,10 @@ svg {
    Media Queries
    ========================================================================== */
 
-
+/*
 @media (min-width: 640px) {
     html {
-        /*max-width: 960px;*/
+
         margin: 0 auto;
     }
 
@@ -352,14 +351,13 @@ svg {
     }
 
     .logo1 {
-        /* TODO Position logo using co-ordinates */
         height: 480px;
         width: 480px;
         display: block;
         margin: 0 auto;
     }
 }
-
+*/
 
 /*  ==========================================================================
     Animations
