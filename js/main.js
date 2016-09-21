@@ -1,3 +1,17 @@
+// Add html components
+/*
+ * Menu
+ */
+$(function () {
+    $("#header").load("html/header.html");
+    $("#menu").load("html/menu.html");
+    $("#hours").load("html/hours.html");
+    $("#news").load("html/news.html");
+    $("#about").load("html/about.html");
+    $("#colophon").load("html/colophon.html");
+});
+
+
 window.addEventListener('scroll', (event) => {
     var topDistance = window.pageYOffset;
     var layers = document.querySelectorAll("[data-type='parallax']");
