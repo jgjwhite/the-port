@@ -9,22 +9,26 @@ This is the home of The Port Little Current Fish & Chip Truck
 <h3>Steps To Build And Run</h3>
 Assuming you have the repository run the following commands to view the website at **_localhost:8080_**.
 <br />
-<b>First:</b>
+**First:**
+[Install Node](https://nodejs.org/)
+<br />
+**Second _(in repository directory)_:**
 ``` npm install ```
 <br />
-<b>Second:</b>
+**Third:**
 ``` http-server ```
 
-You should now see: <br />
+_You should now see:_ <br />
 ```
 Starting up http-server, serving ./ <br />
 Available on: <br />
-  http://192.168.56.1:8080 <br />
-  http://192.168.1.30:8080 <br />
-  http://127.0.0.1:8080 <br />
+  http://x.x.x.x:8080 <br />
+  http://x.x.x.x:8080 <br />
+  http://x.x.x.x:8080 <br />
 Hit CTRL-C to stop the server
 ```
 
+<h5>You're all set!</h5>
 Last Update September 21, 2016
 
 
