@@ -1,0 +1,19 @@
+{
+  "name": "the-port",
+  "version": "v0.0.1",
+  "description": "The Port Little Current Website",
+  "main": "js/main.js",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/justinw54/the-port"
+  },
+  "author": "Saverio Nardi",
+  "devDependencies": {
+    "bootstrap": "^3.3.7",
+    "jquery": "^3.1.0",
+    "modernizr": "^3.3.1",
+    "gulp": "^3.9.1",
+    "http-server": "^0.9.0"
+  }
+}
